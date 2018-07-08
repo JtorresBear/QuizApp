@@ -64,6 +64,12 @@ class ViewController: UIViewController {
         
     }
     
+    
+   
+
+    
+    
+    
     @IBAction func checkAnswer(_ sender: UIButton) {
         // Increment the questions asked counter
         questionsAsked += 1
@@ -80,6 +86,7 @@ class ViewController: UIViewController {
         
         loadNextRoundWithDelay(seconds: 2)
     }
+
     
     func nextRound() {
         if questionsAsked == questionsPerRound {
