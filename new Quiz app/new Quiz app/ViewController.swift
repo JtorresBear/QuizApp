@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //instance of all the question and answer data
     let questionsAndAnswers = QuestionsAndAnswers()
     
-
+    @IBOutlet weak var questionarea: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
