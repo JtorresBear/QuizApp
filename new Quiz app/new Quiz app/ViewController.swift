@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //instance of all the question and answer data
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var optionOne: UIButton!
     @IBOutlet weak var optionTwo: UIButton!
@@ -19,14 +18,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextQuestion: UIButton!
     @IBOutlet weak var startGameButton: UIButton!
     
-    
+    //Starts a new fresh game.
     var game = TheGame()
     
     @IBOutlet weak var questionarea: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Displays Just the startGameButton
         hideOrShowQuestionsAndOptions(hide: true)
         nextQuestion.isHidden = true
     }
@@ -51,6 +50,7 @@ class ViewController: UIViewController {
             game = TheGame()
             showTheGame()
             hideOrShowQuestionsAndOptions(hide: false)
+            enableButtons(enabled: true)
         }
         
         
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     
     @IBAction func checkAnswer(_ sender: UIButton)
     {
+        enableButtons(enabled: false)
         switch sender
         {
         case optionOne: game.isCorrect = game.checkAnswer(givenAnswer: 0)
@@ -94,14 +95,22 @@ class ViewController: UIViewController {
         }
     }
     
+    //hides the next question Button so it cannot be pressed
     @IBAction func nextQuestion(_ sender: Any)
     {
         game.nextRound()
         self.showTheGame()
         nextQuestion.isHidden = true
+        enableButtons(enabled: true)
     }
     
-    
+    func enableButtons(enabled: Bool)
+    {
+        optionOne.isEnabled = enabled
+        optionTwo.isEnabled = enabled
+        optionThree.isEnabled = enabled
+        optionFour.isEnabled = enabled
+    }
     
     
     

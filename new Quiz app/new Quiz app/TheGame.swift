@@ -11,6 +11,7 @@ import GameKit
 
 class TheGame
 {
+    // Just Initializng var's to start the game.
     var gameManager = GameManager()
     var gameIndex: Int
     var numOfRounds: Int
@@ -32,15 +33,19 @@ class TheGame
         gameIndex = 0
         score = 0
         gameIndexes = makeRandomArray(sizeOfArray: numOfRounds)
+        
+        //This while loop keeps creating arrays until it is fully random with no
+        // repeating elements.
         while(!noRepeatingRandoms(array: gameIndexes))
         {
             gameIndexes = makeRandomArray(sizeOfArray: numOfRounds)
         }
-        
+        //starts the first value of the game index so it displays correctly
         self.qAndAs(numIndex: gameIndex)
     }
     
     
+    // this function pushes the index so that we can get our next set of questions and answers.
     func nextRound()
     {
         
@@ -49,6 +54,7 @@ class TheGame
         self.qAndAs(numIndex: gameIndexes[gameIndex])
     }
     
+    // this function resets the variables to display new questions and answwers
     func qAndAs (numIndex: Int)
     {
         question = gameManager.getQuestion(from: gameIndexes[gameIndex])
@@ -58,6 +64,9 @@ class TheGame
         optionFour = gameManager.getPossibleAnswers(from: gameIndexes[gameIndex], and: 3)
     }
     
+    // this function takes an integer that is passed from the view controller
+    // when the method is called. the integer corresponds to see if the
+    // correct answer equals the givenAnswer
     func checkAnswer(givenAnswer: Int) -> Bool
     {
         numOfRounds = numOfRounds - 1
@@ -87,18 +96,14 @@ class TheGame
                 temp += 1
             }
             
-            
             index += 1
             
         }
         
-        
-        
-        
         return true
     }
     
-    
+    //this function creates a random array when ever its called and returns an array.
     func makeRandomArray(sizeOfArray: Int) -> [Int]
     {
         var randomArray: [Int] = [GKRandomSource.sharedRandom().nextInt(upperBound: gameManager.gameQuestions.count)]
