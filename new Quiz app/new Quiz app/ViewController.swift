@@ -104,6 +104,7 @@ class ViewController: UIViewController {
         enableButtons(enabled: true)
     }
     
+    //enables and disables buttons that shouldn't be pressed once they've been used.
     func enableButtons(enabled: Bool)
     {
         optionOne.isEnabled = enabled
@@ -112,15 +113,7 @@ class ViewController: UIViewController {
         optionFour.isEnabled = enabled
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // Hides unwanted buttons and labels.
     func hideOrShowQuestionsAndOptions(hide: Bool)
     {
         question.isHidden = hide
