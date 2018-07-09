@@ -20,7 +20,13 @@ struct QuestionsAndAnswers
                                "Which of the following rivers is longest?",
                                "Which city is the oldest?",
                                "Which country was the first to allow women to vote in national elections?",
-                               "Which of these countries won the most medals in the 2012 Summer Games?"]
+                               "Which of these countries won the most medals in the 2012 Summer Games?",
+                               "Which Bear is best",
+                               "Which Planet is 3rd from the Sun?",
+                               "What Day is Pie Day",
+                               "When meal is between breakfast and Lunch?",
+                               "Do You Like This Game?"
+                               ]
     
     // array of an array of strings to hold the possible questions
     let possibleAnswers: [[String]] = [["George Washington","Franklin D. Roosevelt","Woodrow Wilson","Andrew Jackson"],
@@ -33,10 +39,16 @@ struct QuestionsAndAnswers
                                        ["Mexico City", "Cape Town", "San Juan", "Sydney"],
                                        ["Poland", "United States", "Sweden", "Senegal"],
                                        ["France", "Germany", "Japan", "Great Britian"],
+                                       ["Black Bear", "Polar Bear", "Grizzly Bear", "Chicago Bear"],
+                                       ["Saturn", "Uranus", "Earth", "Pluto"],
+                                       ["March 14", "November 7", "December 27", "July 7"],
+                                       ["Dinner", "Linner","Brunch", "2nd Breakfast"],
+                                       ["Maybe", "No", "Yes", "Hell Yes!"]
+                                       
                                        ]
     // array of indexes that can point to correct answers
     
-    let answerIndexes: [Int] = [2,1,3,3,4,2,2,1,1,4]
+    let answerIndexes: [Int] = [1,0,2,2,3,1,1,0,0,3,3,2,0,2,3]
     
     // gets the total number of questions to let the app know how many rounds it will go.
     

@@ -32,24 +32,36 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySa-uc-JeB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGy-Fj-UBI">
                                 <rect key="frame" x="80" y="350" width="216" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LER-UI-1fC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24c-g8-OkV">
                                 <rect key="frame" x="80" y="430" width="216" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQ3-fs-BgJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nll-De-IFj">
                                 <rect key="frame" x="80" y="190" width="215" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rt1-NR-B93"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyS-pd-Xlo">
                                 <rect key="frame" x="16" y="535" width="343" height="79"/>
@@ -58,6 +70,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7I-mR-JK3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppR-qt-JwV">
+                                <rect key="frame" x="126" y="481" width="123" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRw-h1-EZ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047070312500000003" green="0.43200334821428571" blue="0.076981026785714279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,15 +96,25 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BGy-Fj-UBI" secondAttribute="trailing" constant="79" id="eab-29-8cs"/>
                             <constraint firstItem="24c-g8-OkV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="fYO-oA-xc1"/>
                             <constraint firstItem="ysf-4b-SId" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="fqS-da-XgI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ppR-qt-JwV" secondAttribute="trailing" constant="126" id="khH-7F-pLg"/>
                             <constraint firstItem="BGy-Fj-UBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="m0g-UU-1Ky"/>
                             <constraint firstItem="ysf-4b-SId" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ojc-fI-joA"/>
                             <constraint firstItem="Nll-De-IFj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rvG-2i-6As"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ppR-qt-JwV" secondAttribute="bottom" constant="156" id="wQa-p7-ycg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="24c-g8-OkV" secondAttribute="trailing" constant="79" id="ych-fh-izP"/>
+                            <constraint firstItem="ppR-qt-JwV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="zcS-Yj-Wyi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="nextQuestion" destination="yyS-pd-Xlo" id="Tlu-O9-LBe"/>
+                        <outlet property="optionFour" destination="24c-g8-OkV" id="ZGB-OG-HiS"/>
+                        <outlet property="optionOne" destination="Nll-De-IFj" id="cXo-bx-BfA"/>
+                        <outlet property="optionThree" destination="BGy-Fj-UBI" id="iPa-tL-9Z9"/>
+                        <outlet property="optionTwo" destination="Qgu-JR-IKE" id="2ee-pw-7On"/>
+                        <outlet property="question" destination="ysf-4b-SId" id="lqa-Wf-7jY"/>
                         <outlet property="questionarea" destination="ysf-4b-SId" id="SpT-8u-bJv"/>
+                        <outlet property="startGameButton" destination="ppR-qt-JwV" id="QBD-g6-CGs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
